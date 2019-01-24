@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PrimaryText">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+    <style name="SecondaryText">
+        <item name="android:textColor">@color/colorSecondaryText</item>
+    </style>
+
+    <style name="AccentText">
+        <item name="android:textColor">@color/colorAccentText</item>
+    </style>
+
+</resources>

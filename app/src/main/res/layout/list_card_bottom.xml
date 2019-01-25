@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccentText">
+
+        <TextView
+            android:id="@+id/txt_header_card"
+            style="@style/PrimaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Spinach Turkey \nFig Salad"
+            apps:layout_constraintBottom_toTopOf="@+id/ratingBar_card"
+            apps:layout_constraintStart_toStartOf="parent"
+            apps:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="104dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_card"
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:rating="4"
+            apps:layout_constraintStart_toStartOf="parent"
+            apps:layout_constraintTop_toBottomOf="@id/txt_header_card"
+            tools:layout_editor_absoluteY="223dp" />
+
+        <TextView
+            android:id="@+id/txt_rating_card"
+            style="@style/AccentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="some text"
+            apps:layout_constraintBottom_toBottomOf="@+id/ratingBar_card"
+            apps:layout_constraintStart_toEndOf="@+id/ratingBar_card"
+            apps:layout_constraintTop_toTopOf="@+id/ratingBar_card" />
+
+        <TextView
+            android:id="@+id/txt_description_card"
+            style="@style/SecondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Lorem ipsum dolor sit amet \nonsectetur elit. \n Nulla non feugiat"
+            apps:layout_constraintHorizontal_bias="0.497"
+            apps:layout_constraintStart_toStartOf="parent"
+            apps:layout_constraintTop_toBottomOf="@+id/ratingBar_card" />
+
+        <TextView
+            android:id="@+id/txt_minutes_card"
+            style="@style/PrimaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="84dp"
+            android:text="15"
+            apps:layout_constraintBaseline_toBaselineOf="@+id/txt_ingredient_card"
+            apps:layout_constraintEnd_toStartOf="@+id/txt_ingredient_card"
+            apps:layout_constraintHorizontal_bias="0.5"
+            apps:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_minutes_word_card"
+            style="@style/SecondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MIN"
+            apps:layout_constraintBaseline_toBaselineOf="@+id/txt_ingredient_word_card"
+            apps:layout_constraintEnd_toEndOf="@+id/txt_minutes_card"
+            apps:layout_constraintStart_toStartOf="@+id/txt_minutes_card" />
+
+        <TextView
+            android:id="@+id/txt_ingredient_card"
+            style="@style/PrimaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="84dp"
+            android:text="6"
+            apps:layout_constraintEnd_toStartOf="@+id/txt_kcal_card"
+            apps:layout_constraintHorizontal_bias="0.5"
+            apps:layout_constraintStart_toEndOf="@+id/txt_minutes_card"
+            apps:layout_constraintTop_toBottomOf="@+id/txt_description_card" />
+
+        <TextView
+            android:id="@+id/txt_ingredient_word_card"
+            style="@style/SecondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="INGREDIENT"
+            apps:layout_constraintBottom_toBottomOf="parent"
+            apps:layout_constraintEnd_toEndOf="@+id/txt_ingredient_card"
+            apps:layout_constraintStart_toStartOf="@+id/txt_ingredient_card"
+            apps:layout_constraintTop_toBottomOf="@+id/txt_ingredient_card" />
+
+        <TextView
+            android:id="@+id/txt_kcal_card"
+            style="@style/PrimaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90"
+            apps:layout_constraintBaseline_toBaselineOf="@+id/txt_ingredient_card"
+            apps:layout_constraintEnd_toEndOf="parent"
+            apps:layout_constraintHorizontal_bias="0.5"
+            apps:layout_constraintStart_toEndOf="@+id/txt_ingredient_card" />
+
+        <TextView
+            android:id="@+id/txt_kcal_word_card"
+            style="@style/SecondaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KCAL"
+            apps:layout_constraintBaseline_toBaselineOf="@+id/txt_ingredient_word_card"
+            apps:layout_constraintEnd_toEndOf="@+id/txt_kcal_card"
+            apps:layout_constraintStart_toStartOf="@+id/txt_kcal_card" />
+
+        <android.support.constraint.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.card.MaterialCardView>

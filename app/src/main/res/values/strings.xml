@@ -1,3 +1,14 @@
 <resources>
+
     <string name="app_name">Come Across Food</string>
+
+    <!--Menu Array-->
+    <string-array name="menu_array">
+        <item>Western cuisine</item>
+        <item>Eastern cuisine</item>
+        <item>African cuisine</item>
+        <item>European cuisine</item>
+    </string-array>
+
+
 </resources>

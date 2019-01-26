@@ -7,6 +7,7 @@ This is the process, not finished yet.
 // rotation animation
 
 // res/anim/rotate_picture.xml
+
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android" 
     android:shareInterpolator="false">
@@ -24,6 +25,7 @@ splash.startAnimation(rotate);
 
 
 // another way
+
 RotateAnimation anim = new RotateAnimation(0f, 350f, 15f, 15f);
 anim.setInterpolator(new LinearInterpolator());
 anim.setRepeatCount(Animation.INFINITE);
@@ -40,6 +42,7 @@ splash.setAnimation(null);
 // gradient
 
 // res/drawable/gradient_background_main
+
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
@@ -111,6 +114,7 @@ recyclerView.layoutManager = manager
 
 
 // Button with text and icon
+
 <Button
     android:id="@+id/bSearch"
     android:layout_width="fill_parent"
@@ -144,6 +148,7 @@ String[] some_array = getResources().getStringArray(R.array.your_string_array)
 getResources().getStringArray(R.array.your_array)[position]
 
 // another way
+
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="my_books">
@@ -159,6 +164,7 @@ String[] myBooks = res.getStringArray(R.array.my_books);
 
 
 // ListPreference
+
 <resources>
     <string-array name="listArray">
         <item>Headings</item>
